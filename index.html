@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechNova — Next-Gen SaaS Platform</title>
+    <meta name="description"
+        content="TechNova is a next-generation SaaS platform offering AI-powered analytics, seamless integrations, and enterprise-grade security." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="offcanvas offcanvas-start tn-offcanvas" tabindex="-1" id="sidebarOffcanvas"
+        aria-labelledby="sidebarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarLabel">TechNova</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="text-muted-tn small mb-3 px-3">NAVIGATION</p>
+            <div class="nav flex-column gap-1">
+                <a href="#hero" class="nav-link"><i class="bi bi-house-door"></i> Home</a>
+                <a href="#features" class="nav-link"><i class="bi bi-lightning"></i> Features</a>
+                <a href="#pricing" class="nav-link"><i class="bi bi-tag"></i> Pricing</a>
+                <a href="#gallery" class="nav-link"><i class="bi bi-grid"></i> Gallery</a>
+                <a href="#contact" class="nav-link"><i class="bi bi-envelope"></i> Contact</a>
+            </div>
+
+            <hr class="divider my-4" />
+            <p class="text-muted-tn small mb-3 px-3">RESOURCES</p>
+            <div class="nav flex-column gap-1">
+                <a href="#" class="nav-link"><i class="bi bi-book"></i> Documentation</a>
+                <a href="#" class="nav-link"><i class="bi bi-github"></i> GitHub</a>
+                <a href="#" class="nav-link"><i class="bi bi-discord"></i> Community</a>
+                <a href="#" class="nav-link"><i class="bi bi-headset"></i> Support</a>
+            </div>
+
+            <hr class="divider my-4" />
+            <div class="px-2">
+                <div class="stat-card text-center p-3" style="background:#f5f3ff; border-color:#ede9fe;">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Uptime SLA</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-expand-lg tn-navbar fixed-top" id="mainNav">
+        <div class="container-xl">
+            <button class="btn btn-tn-outline btn-sm me-2 d-lg-none border-0"
+                style="background:rgba(255,255,255,0.05); color:#fff; padding:0.4rem 0.6rem; border-radius:8px;"
+                type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas"
+                aria-controls="sidebarOffcanvas" data-bs-toggle-tooltip title="Open sidebar">
+                <i class="bi bi-layout-sidebar"></i>
+            </button>
+            <a class="navbar-brand me-4" href="#">TechNova</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto gap-1">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#features"><i
+                                        class="bi bi-bar-chart me-2 text-accent"></i>Analytics</a></li>
+                            <li><a class="dropdown-item" href="#features"><i
+                                        class="bi bi-shield-check me-2 text-accent"></i>Security</a></li>
+                            <li><a class="dropdown-item" href="#features"><i class="bi bi-cpu me-2 text-accent"></i>AI
+                                    Engine</a></li>
+                            <li>
+                                <hr class="dropdown-divider border-secondary" />
+                            </li>
+                            <li><a class="dropdown-item" href="#features"><i
+                                        class="bi bi-plug me-2 text-accent"></i>Integrations</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Company</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-people me-2 text-accent"></i>About
+                                    Us</a></li>
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="bi bi-newspaper me-2 text-accent"></i>Blog</a></li>
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="bi bi-briefcase me-2 text-accent"></i>Careers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex me-3" role="search" onsubmit="return false;">
+                    <input class="form-control tn-search-input" type="search" placeholder="Search docs…"
+                        aria-label="Search" />
+                </form>
+                <div class="d-flex gap-2 align-items-center">
+                    <a href="#" class="btn btn-tn-outline btn-sm">Sign In</a>
+                    <button class="btn btn-tn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#getStartedModal">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hero">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active carousel-slide-1">
+                    <div class="carousel-bg"></div>
+                    <div class="carousel-caption">
+                        <p class="hero-eyebrow">🚀 Now in Public Beta</p>
+                        <h1 class="hero-title">The Future of <span>Business Intelligence</span> Starts Here</h1>
+                        <p class="hero-sub">TechNova brings AI-powered insights, real-time dashboards, and predictive
+                            analytics to your fingertips — no data science degree required.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <button class="btn btn-tn-primary" data-bs-toggle="modal" data-bs-target="#getStartedModal">
+                                <i class="bi bi-lightning-charge-fill me-1"></i> Start Free Trial
+                            </button>
+                            <a href="#features" class="btn btn-tn-outline">
+                                <i class="bi bi-play-circle me-1"></i> Watch Demo
+                            </a>
+                        </div>
+                        <div class="d-flex gap-3 mt-4 flex-wrap">
+                            <span
+                                class="badge rounded-pill bg-success bg-opacity-25 text-success border border-success border-opacity-25 px-3 py-2">
+                                <i class="bi bi-check-circle me-1"></i> No credit card required
+                            </span>
+                            <span
+                                class="badge rounded-pill bg-info bg-opacity-25 text-info border border-info border-opacity-25 px-3 py-2">
+                                <i class="bi bi-shield-check me-1"></i> SOC 2 Certified
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-slide-2">
+                    <div class="carousel-bg"></div>
+                    <div class="carousel-caption">
+                        <p class="hero-eyebrow">⚡ AI Engine v3.0</p>
+                        <h1 class="hero-title">Automate Everything with <span>Intelligent Workflows</span></h1>
+                        <p class="hero-sub">Connect 500+ tools, build no-code automations, and let our AI handle
+                            repetitive tasks while your team focuses on what matters.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <button class="btn btn-tn-primary" data-bs-toggle="modal" data-bs-target="#getStartedModal">
+                                <i class="bi bi-robot me-1"></i> Explore AI Features
+                            </button>
+                            <a href="#pricing" class="btn btn-tn-outline">View Pricing</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-slide-3">
+                    <div class="carousel-bg"></div>
+                    <div class="carousel-caption">
+                        <p class="hero-eyebrow">🔒 Enterprise Ready</p>
+                        <h1 class="hero-title">Enterprise-Grade Security <span>Without the Complexity</span></h1>
+                        <p class="hero-sub">Role-based access control, end-to-end encryption, audit logs, and GDPR
+                            compliance — all built in from day one.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <button class="btn btn-tn-primary" data-bs-toggle="modal" data-bs-target="#getStartedModal">
+                                <i class="bi bi-building me-1"></i> See Enterprise Plan
+                            </button>
+                            <a href="#contact" class="btn btn-tn-outline">Talk to Sales</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <i class="bi bi-chevron-left fs-5" style="color:var(--tn-primary)"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <i class="bi bi-chevron-right fs-5" style="color:var(--tn-primary)"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="section-darker">
+        <div class="container-xl">
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <p class="section-label">System Status</p>
+                    <h2 class="section-title mb-2">Real-Time <span>Notifications</span></h2>
+                    <div class="gradient-hr mx-auto mb-2"></div>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="alert alert-success tn-alert alert-dismissible fade show" role="alert">
+                        <i class="bi bi-check-circle-fill fs-5"></i>
+                        <div>
+                            <strong>Deployment Successful!</strong> Version 3.2.1 is now live across all regions with
+                            zero downtime.
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-warning tn-alert alert-dismissible fade show" role="alert">
+                        <i class="bi bi-exclamation-triangle-fill fs-5"></i>
+                        <div>
+                            <strong>Scheduled Maintenance:</strong> Database optimization on Feb 28 from 02:00–04:00
+                            UTC.
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-danger tn-alert alert-dismissible fade show" role="alert">
+                        <i class="bi bi-x-circle-fill fs-5"></i>
+                        <div>
+                            <strong>API Rate Limit:</strong> You've exceeded the free tier limit. <a href="#pricing"
+                                class="alert-link">Upgrade your plan</a> to continue.
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="alert alert-info tn-alert alert-dismissible fade show" role="alert">
+                        <i class="bi bi-info-circle-fill fs-5"></i>
+                        <div>
+                            <strong>New Feature:</strong> AI Report Builder is now available in Beta. <a href="#"
+                                class="alert-link">Try it free</a>.
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-dark" id="components">
+        <div class="container-xl">
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <p class="section-label">UI Components</p>
+                    <h2 class="section-title mb-2">Badges &amp; <span>Buttons</span></h2>
+                    <div class="gradient-hr mx-auto mb-3"></div>
+                    <p class="section-sub mx-auto">Every interaction is crafted with purpose. Our design system ensures
+                        consistency across the entire TechNova platform.</p>
+                </div>
+            </div>
+            <div class="row g-3 mb-3">
+                <div class="col-12">
+                    <div class="feature-card">
+                        <h5 class="mb-3"><i class="bi bi-tag me-2 text-accent"></i>Badges — Status Labels</h5>
+                        <div class="d-flex flex-wrap gap-2 align-items-center">
+                            <span class="badge badge-pulse"
+                                style="background:var(--tn-gradient); font-size:0.82rem; padding:0.5rem 1rem; border-radius:50px;">
+                                🔴 LIVE
+                            </span>
+                            <span class="badge bg-success rounded-pill px-3 py-2">✔ Verified</span>
+                            <span class="badge bg-warning text-dark rounded-pill px-3 py-2">⚠ Pending</span>
+                            <span class="badge bg-danger rounded-pill px-3 py-2">✖ Rejected</span>
+                            <span class="badge bg-info rounded-pill px-3 py-2">ℹ Beta</span>
+                            <span class="badge bg-secondary rounded-pill px-3 py-2">Archived</span>
+                            <span class="badge bg-dark border border-secondary rounded-pill px-3 py-2">v3.2.1</span>
+                            <span class="badge bg-primary rounded-pill px-3 py-2 fs-6">42 <i
+                                    class="bi bi-bell-fill ms-1"></i></span>
+                            <div class="position-relative d-inline-block ms-2">
+                                <button class="btn btn-tn-outline btn-sm">
+                                    <i class="bi bi-envelope me-1"></i> Messages
+                                </button>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                    style="font-size:0.65rem;">
+                                    7
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-card h-100">
+                        <h5 class="mb-3"><i class="bi bi-mouse2 me-2 text-accent"></i>Buttons — Sizes</h5>
+                        <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
+                            <button class="btn btn-tn-primary btn-sm">Small</button>
+                            <button class="btn btn-tn-primary">Default</button>
+                            <button class="btn btn-tn-primary btn-lg">Large</button>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 align-items-center">
+                            <button class="btn btn-tn-outline btn-sm">Outline SM</button>
+                            <button class="btn btn-tn-outline">Outline MD</button>
+                            <button class="btn btn-tn-secondary">Secondary</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-card h-100">
+                        <h5 class="mb-3"><i class="bi bi-palette me-2 text-accent"></i>Buttons — Variants</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <button class="btn btn-primary btn-sm rounded-pill" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Bootstrap Primary">Primary</button>
+                            <button class="btn btn-success btn-sm rounded-pill" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Bootstrap Success">Success</button>
+                            <button class="btn btn-warning btn-sm rounded-pill text-dark" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Bootstrap Warning">Warning</button>
+                            <button class="btn btn-danger btn-sm rounded-pill" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Bootstrap Danger">Danger</button>
+                            <button class="btn btn-info btn-sm rounded-pill text-dark" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Bootstrap Info">Info</button>
+                            <button class="btn btn-secondary btn-sm rounded-pill" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Bootstrap Secondary">Secondary</button>
+                            <button class="btn btn-outline-light btn-sm rounded-pill" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Outline Light">Light</button>
+                            <button class="btn btn-dark btn-sm rounded-pill border border-secondary"
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Bootstrap Dark">Dark</button>
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn btn-tn-secondary btn-sm" data-bs-toggle="popover"
+                                data-bs-title="🔥 Pro Tip"
+                                data-bs-content="Combine Bootstrap utilities like shadow-lg, rounded-pill, and text-gradient for stunning results with zero custom CSS."
+                                data-bs-placement="top" data-bs-trigger="focus">
+                                <i class="bi bi-lightbulb me-1"></i> Show Popover
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number">12K+</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Satisfaction Rate</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Integrations</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card">
+                        <div class="stat-number">3x</div>
+                        <div class="stat-label">Faster Analytics</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-darker" id="features">
+        <div class="container-xl">
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <p class="section-label">Why TechNova</p>
+                    <h2 class="section-title mb-2">Everything You Need, <span>Nothing You Don't</span></h2>
+                    <div class="gradient-hr mx-auto mb-3"></div>
+                    <p class="section-sub mx-auto">Hover over any feature card to learn more. Each card demonstrates
+                        Bootstrap tooltip integration.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Real-time processing with sub-50ms latency across all global edge nodes.">
+                        <div class="feature-icon"><i class="bi bi-bar-chart-line"></i></div>
+                        <h5>AI-Powered Analytics</h5>
+                        <p>Predictive dashboards that surface insights before you know you need them.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="AES-256 encryption at rest and in transit. Zero-trust architecture.">
+                        <div class="feature-icon" style="background:#e0f2fe; color:#0ea5e9"><i
+                                class="bi bi-shield-lock"></i></div>
+                        <h5>Enterprise Security</h5>
+                        <p>SOC 2 Type II certified with end-to-end encryption and GDPR compliance.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Connects with Slack, GitHub, Salesforce, Notion, and 497 more tools.">
+                        <div class="feature-icon" style="background:#fee2e2; color:#ef4444"><i class="bi bi-plug"></i>
+                        </div>
+                        <h5>500+ Integrations</h5>
+                        <p>One-click connects with all the tools your team already uses every day.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Auto-scales from 1 to 1M users without any configuration changes.">
+                        <div class="feature-icon" style="background:#fef3c7; color:#d97706"><i
+                                class="bi bi-speedometer2"></i></div>
+                        <h5>Auto-Scaling</h5>
+                        <p>Infrastructure that scales automatically with your business — pay only for what you use.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Build powerful workflows with our drag-and-drop no-code builder.">
+                        <div class="feature-icon" style="background:#ede9fe; color:#7c3aed"><i class="bi bi-robot"></i>
+                        </div>
+                        <h5>No-Code Automation</h5>
+                        <p>Drag-and-drop workflow builder with AI suggestions to automate any process.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-card" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="24/7 live chat support with average 3-minute response time on all paid plans.">
+                        <div class="feature-icon" style="background:#dcfce7; color:#16a34a"><i
+                                class="bi bi-headset"></i></div>
+                        <h5>24/7 Expert Support</h5>
+                        <p>Real humans, not bots. Our team is available round the clock to help you succeed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-dark" id="pricing">
+        <div class="container-xl">
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <p class="section-label">Pricing</p>
+                    <h2 class="section-title mb-2">Simple, <span>Transparent Pricing</span></h2>
+                    <div class="gradient-hr mx-auto mb-3"></div>
+                    <p class="section-sub mx-auto">No hidden fees, no surprise bills. Start free and scale as you grow.
+                    </p>
+                    <div class="d-flex justify-content-center align-items-center gap-3 mt-4">
+                        <span class="text-muted-tn small fw-500">Monthly</span>
+                        <div class="form-check form-switch mb-0">
+                            <input class="form-check-input" type="checkbox" id="billingToggle"
+                                style="width:2.5rem; height:1.3rem; cursor:pointer; background-color:var(--tn-primary); border-color:var(--tn-primary);" />
+                        </div>
+                        <span class="text-muted-tn small">Annual <span class="badge bg-success ms-1">Save
+                                20%</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="pricing-card h-100">
+                        <p class="text-muted-tn small fw-600 mb-1">STARTER</p>
+                        <div class="price-amount">$0<span class="price-period fs-5">/mo</span></div>
+                        <p class="text-muted-tn small mt-1 mb-4">Perfect for individuals just getting started.</p>
+                        <div class="d-flex flex-column gap-2 mb-4">
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> Up to 3 projects</div>
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> 5GB storage</div>
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> Basic analytics</div>
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> Community support</div>
+                            <div class="price-feature" style="opacity:0.4"><i class="bi bi-x-lg"
+                                    style="color:#ef4444"></i> AI features</div>
+                            <div class="price-feature" style="opacity:0.4"><i class="bi bi-x-lg"
+                                    style="color:#ef4444"></i> Custom domain</div>
+                        </div>
+                        <button class="btn btn-tn-outline w-100 mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#getStartedModal">Start Free</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="pricing-card featured h-100">
+                        <span class="pricing-badge badge badge-pulse"
+                            style="background:var(--tn-gradient); border-radius:50px; padding:0.4rem 0.9rem;">Most
+                            Popular</span>
+                        <p class="text-accent small fw-700 mb-1">PRO</p>
+                        <div class="price-amount"
+                            style="background:var(--tn-gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">
+                            $29<span class="price-period fs-5" style="-webkit-text-fill-color:#9ca3af;">/mo</span>
+                        </div>
+                        <p class="text-muted-tn small mt-1 mb-4">For growing teams that need more power.</p>
+                        <div class="d-flex flex-column gap-2 mb-4">
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> Unlimited projects</div>
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> 100GB storage</div>
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> Advanced analytics</div>
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> Priority support</div>
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> Full AI features</div>
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> Custom domain</div>
+                        </div>
+                        <button class="btn btn-tn-primary w-100 mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#getStartedModal">
+                            <i class="bi bi-lightning-charge-fill me-1"></i> Get Started
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="pricing-card h-100">
+                        <p class="text-muted-tn small fw-600 mb-1">ENTERPRISE</p>
+                        <div class="price-amount">Custom</div>
+                        <p class="text-muted-tn small mt-1 mb-4">Tailored for large organizations with custom needs.</p>
+                        <div class="d-flex flex-column gap-2 mb-4">
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> Everything in Pro</div>
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> Unlimited storage</div>
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> Dedicated account manager</div>
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> SLA guarantee (99.99%)</div>
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> SAML SSO &amp; SCIM</div>
+                            <div class="price-feature"><i class="bi bi-check-lg"></i> Custom contracts</div>
+                        </div>
+                        <a href="#contact" class="btn btn-tn-secondary w-100 mt-auto">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center gap-4 text-center">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-shield-check text-success"></i>
+                            <span class="small text-muted-tn">30-day money-back guarantee</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-credit-card text-info"></i>
+                            <span class="small text-muted-tn">All major cards accepted</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-arrow-repeat text-warning"></i>
+                            <span class="small text-muted-tn">Cancel anytime, no penalties</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-lock text-accent"></i>
+                            <span class="small text-muted-tn">256-bit SSL encryption</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compare Plans Section -->
+<section class="bg-dark text-light py-5">
+  <div class="container">
+
+    <h1 class="text-center mb-5 fw-normal">Compare plans</h1>
+
+    <div class="table-responsive">
+      <table class="table text-center text-light align-middle">
+        <thead>
+          <tr>
+            <th style="width: 34%;"></th>
+            <th style="width: 22%;">Free</th>
+            <th style="width: 22%;">Pro</th>
+            <th style="width: 22%;">Enterprise</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Public</th>
+            <td><i class="bi bi-check-lg"></i></td>
+            <td><i class="bi bi-check-lg"></i></td>
+            <td><i class="bi bi-check-lg"></i></td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="text-start">Private</th>
+            <td></td>
+            <td><i class="bi bi-check-lg"></i></td>
+            <td><i class="bi bi-check-lg"></i></td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="text-start">Permissions</th>
+            <td><i class="bi bi-check-lg"></i></td>
+            <td><i class="bi bi-check-lg"></i></td>
+            <td><i class="bi bi-check-lg"></i></td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="text-start">Sharing</th>
+            <td></td>
+            <td><i class="bi bi-check-lg"></i></td>
+            <td><i class="bi bi-check-lg"></i></td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="text-start">Unlimited members</th>
+            <td></td>
+            <td><i class="bi bi-check-lg"></i></td>
+            <td><i class="bi bi-check-lg"></i></td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="text-start">Extra security</th>
+            <td></td>
+            <td></td>
+            <td><i class="bi bi-check-lg"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+    <div class="section-darker" id="gallery">
+        <div class="container-xl">
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <p class="section-label">Product Gallery</p>
+                    <h2 class="section-title mb-2">See TechNova <span>In Action</span></h2>
+                    <div class="gradient-hr mx-auto mb-3"></div>
+                    <p class="section-sub mx-auto">Real screenshots from real teams. Hover over any card to explore.</p>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="gallery-item gallery-tall shadow-lg">
+                        <img src="https://i.pinimg.com/736x/4c/07/7f/4c077f8ca873a616bef9c8d4ceaefa9f.jpg"
+                            alt="AI Analytics Dashboard" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    </div>
+                    <p class="small text-muted-tn mt-2 text-center">AI Analytics Dashboard</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column gap-3">
+                    <div class="gallery-item gallery-short shadow-lg">
+                        <img src="https://i.pinimg.com/736x/98/fc/76/98fc76cd0ce56c1e93dbccf2ff9d754c.jpg"
+                            alt="Workflow Builder" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    </div>
+                    <p class="small text-muted-tn text-center" style="margin-top:-8px">Workflow Builder</p>
+                    <div class="gallery-item gallery-short shadow-lg">
+                        <img src="https://i.pinimg.com/736x/87/3c/ff/873cfff583da483d0981f011f8844060.jpg"
+                            alt="Security Dashboard" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    </div>
+                    <p class="small text-muted-tn text-center" style="margin-top:-8px">Security Dashboard</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="gallery-item gallery-medium shadow-lg">
+                        <img src="https://i.pinimg.com/736x/36/b2/ad/36b2ad413de80f2bdf47b8824c979f96.jpg" alt="Team Collaboration" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    </div>
+                    <p class="small text-muted-tn mt-2 text-center">Team Collaboration</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="gallery-item gallery-short shadow-lg">
+                        <img src="https://i.pinimg.com/1200x/9c/28/4f/9c284f062e19cbf3e2dbc83d31160401.jpg" alt="Integrations Hub" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    </div>
+                    <p class="small text-muted-tn mt-2 text-center">Integrations Hub</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="gallery-item gallery-short shadow-lg">
+                        <img src="https://i.pinimg.com/1200x/5c/b4/4f/5cb44feec5443a0b30e295241b544feb.jpg" alt="Mobile App" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    </div>
+                    <p class="small text-muted-tn mt-2 text-center">Mobile App</p>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4">
+                    <div class="gallery-item gallery-short shadow-lg">
+                        <img src="https://i.pinimg.com/736x/62/7b/12/627b1227d7241b203eeb74be98231f2d.jpg" alt="Custom Reports" />
+                        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+                    </div>
+                    <p class="small text-muted-tn mt-2 text-center">Custom Reports</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-dark" id="contact">
+        <div class="container-xl">
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <p class="section-label">Get In Touch</p>
+                    <h2 class="section-title mb-2">Let's Start a <span>Conversation</span></h2>
+                    <div class="gradient-hr mx-auto mb-3"></div>
+                    <p class="section-sub mx-auto">Fill in your details below. We'll get back to you within 24 hours.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="form-section">
+                        <div id="formSuccess" class="alert alert-success tn-alert mb-4 d-none" role="alert">
+                            <i class="bi bi-check-circle-fill fs-5"></i>
+                            <div><strong>Message Sent!</strong> Thank you for reaching out. Our team will be in touch
+                                shortly.</div>
+                        </div>
+
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <div class="row g-3 mb-3">
+                                <div class="col-sm-6">
+                                    <label for="firstName" class="form-label small text-muted-tn fw-600">First Name
+                                        <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control tn-form-control" id="firstName"
+                                        placeholder="Anushka" required />
+                                    <div class="invalid-feedback">Please enter your first name.</div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="lastName" class="form-label small text-muted-tn fw-600">Last Name <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control tn-form-control" id="lastName"
+                                        placeholder="Bukkawar" required />
+                                    <div class="invalid-feedback">Please enter your last name.</div>
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-3">
+                                <div class="col-sm-6">
+                                    <label for="email" class="form-label small text-muted-tn fw-600">Email Address <span
+                                            class="text-danger">*</span></label>
+                                    <input type="email" class="form-control tn-form-control" id="email"
+                                        placeholder="you@example.com" required />
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="phone" class="form-label small text-muted-tn fw-600">Phone
+                                        Number</label>
+                                    <input type="tel" class="form-control tn-form-control" id="phone"
+                                        placeholder="+91 98765 43210" />
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-3">
+                                <div class="col-sm-6">
+                                    <label for="company" class="form-label small text-muted-tn fw-600">Company</label>
+                                    <input type="text" class="form-control tn-form-control" id="company"
+                                        placeholder="Acme Corp" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="planSelect" class="form-label small text-muted-tn fw-600">Interested In
+                                        <span class="text-danger">*</span></label>
+                                    <select class="form-select tn-form-control" id="planSelect" required>
+                                        <option value="">Choose a plan…</option>
+                                        <option value="starter">Starter (Free)</option>
+                                        <option value="pro">Pro ($29/mo)</option>
+                                        <option value="enterprise">Enterprise (Custom)</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a plan.</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label small text-muted-tn fw-600">Your Message <span
+                                        class="text-danger">*</span></label>
+                                <textarea class="form-control tn-form-control" id="message" rows="4"
+                                    placeholder="Tell us about your project or ask us anything…" required
+                                    minlength="20"></textarea>
+                                <div class="invalid-feedback">Please enter a message (min. 20 characters).</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label small text-muted-tn fw-600 d-block">Preferred Contact Method
+                                    <span class="text-danger">*</span></label>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <div class="form-check tn-form-check">
+                                        <input class="form-check-input" type="radio" name="contactMethod"
+                                            id="radioEmail" value="email" required />
+                                        <label class="form-check-label" for="radioEmail"><i
+                                                class="bi bi-envelope me-1"></i>Email</label>
+                                    </div>
+                                    <div class="form-check tn-form-check">
+                                        <input class="form-check-input" type="radio" name="contactMethod"
+                                            id="radioPhone" value="phone" />
+                                        <label class="form-check-label" for="radioPhone"><i
+                                                class="bi bi-telephone me-1"></i>Phone</label>
+                                    </div>
+                                    <div class="form-check tn-form-check">
+                                        <input class="form-check-input" type="radio" name="contactMethod"
+                                            id="radioSlack" value="slack" />
+                                        <label class="form-check-label" for="radioSlack"><i
+                                                class="bi bi-slack me-1"></i>Slack</label>
+                                    </div>
+                                </div>
+                                <div class="invalid-feedback d-block" id="radioError" style="display:none!important;">
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="form-check tn-form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="checkNewsletter" />
+                                    <label class="form-check-label" for="checkNewsletter">
+                                        Subscribe to TechNova newsletter (product updates &amp; tips)
+                                    </label>
+                                </div>
+                                <div class="form-check tn-form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkTerms" required />
+                                    <label class="form-check-label" for="checkTerms">
+                                        I agree to the <a href="#" class="text-accent">Terms of Service</a> and <a
+                                            href="#" class="text-accent">Privacy Policy</a> <span
+                                            class="text-danger">*</span>
+                                    </label>
+                                    <div class="invalid-feedback">You must agree before submitting.</div>
+                                </div>
+                            </div>
+                            <button class="btn btn-tn-primary w-100 py-3" type="submit" id="submitBtn">
+                                <span id="submitText"><i class="bi bi-send me-2"></i>Send Message</span>
+                                <span id="submitSpinner" class="d-none">
+                                    <span class="spinner-border spinner-border-sm me-2" role="status"></span> Sending…
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade tn-modal" id="getStartedModal" tabindex="-1" aria-labelledby="getStartedModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="getStartedModalLabel">
+                        <i class="bi bi-lightning-charge-fill me-2"></i>Get Started with TechNova
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="text-center p-3 rounded-tn"
+                                style="background:#f5f3ff; border:1.5px solid #ede9fe;">
+                                <div class="fs-2 mb-2">🚀</div>
+                                <h6 class="fw-700">Quick Setup</h6>
+                                <p class="small text-muted-tn mb-0">Deploy TechNova in under 5 minutes. No credit card
+                                    required.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center p-3 rounded-tn"
+                                style="background:#e0f2fe; border:1.5px solid #bae6fd;">
+                                <div class="fs-2 mb-2">🤖</div>
+                                <h6 class="fw-700">AI Onboarding</h6>
+                                <p class="small text-muted-tn mb-0">Our AI assistant will guide you through setup
+                                    personalized to your needs.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center p-3 rounded-tn"
+                                style="background:#f0fdf4; border:1.5px solid #bbf7d0;">
+                                <div class="fs-2 mb-2">💬</div>
+                                <h6 class="fw-700">Live Support</h6>
+                                <p class="small text-muted-tn mb-0">Chat with a TechNova expert as you set up your
+                                    workspace.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="divider my-4" />
+
+                    <p class="text-muted-tn small mb-3">Choose your registration method:</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <button class="btn btn-tn-primary flex-fill py-2">
+                            <i class="bi bi-envelope me-2"></i>Sign up with Email
+                        </button>
+                        <button class="btn btn-tn-outline flex-fill py-2">
+                            <img src="https://www.google.com/favicon.ico" width="16" class="me-2" alt="Google" />Sign up
+                            with Google
+                        </button>
+                        <button class="btn btn-tn-outline flex-fill py-2">
+                            <i class="bi bi-github me-2"></i>Sign up with GitHub
+                        </button>
+                    </div>
+
+                    <p class="text-center text-muted-tn small mt-3 mb-0">
+                        By signing up, you agree to our
+                        <a href="#" class="text-accent">Terms of Service</a> and
+                        <a href="#" class="text-accent">Privacy Policy</a>.
+                    </p>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <span class="small text-muted-tn"><i class="bi bi-shield-check me-1 text-success"></i> 30-day free
+                        trial, no credit card needed</span>
+                    <button type="button" class="btn btn-tn-outline btn-sm" data-bs-dismiss="modal">Maybe later</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tn-footer">
+        <div class="container-xl d-flex flex-column flex-sm-row align-items-center justify-content-between w-100">
+            <span class="footer-copy">
+                © 2026 <strong style="color:#6c2ef2">TechNova Inc.</strong> All rights reserved.
+            </span>
+            <div class="footer-links d-flex gap-3 mt-2 mt-sm-0">
+                <a href="#">Privacy Policy</a>
+                <span class="footer-dot">·</span>
+                <a href="#">Terms of Service</a>
+                <span class="footer-dot">·</span>
+                <a href="#">Cookie Settings</a>
+                <span class="footer-dot d-none d-sm-inline">·</span>
+                <a href="#" class="d-none d-sm-inline"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="d-none d-sm-inline"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="d-none d-sm-inline"><i class="bi bi-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // ── Initialize all Tooltips ────────────────────────────────────
+        const tooltipEls = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltipEls.forEach(el => new bootstrap.Tooltip(el, { delay: { show: 150, hide: 100 } }));
+
+        // ── Initialize all Popovers ────────────────────────────────────
+        const popoverEls = document.querySelectorAll('[data-bs-toggle="popover"]');
+        popoverEls.forEach(el => new bootstrap.Popover(el, { html: false }));
+
+        // ── Navbar scroll shadow ───────────────────────────────────────
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                nav.style.boxShadow = '0 4px 32px rgba(0,0,0,0.5)';
+            } else {
+                nav.style.boxShadow = 'none';
+            }
+        });
+
+        // ── Form Validation ────────────────────────────────────────────
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const submitText = document.getElementById('submitText');
+        const submitSpinner = document.getElementById('submitSpinner');
+        const formSuccess = document.getElementById('formSuccess');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            // Check radio group manually
+            const radios = form.querySelectorAll('input[name="contactMethod"]');
+            const anyChecked = [...radios].some(r => r.checked);
+            const radioError = document.getElementById('radioError');
+            if (!anyChecked) {
+                radioError.textContent = 'Please select a preferred contact method.';
+                radioError.style.display = 'block';
+            } else {
+                radioError.style.display = 'none';
+            }
+
+            form.classList.add('was-validated');
+
+            if (form.checkValidity() && anyChecked) {
+                // Fake async submission
+                submitText.classList.add('d-none');
+                submitSpinner.classList.remove('d-none');
+                submitBtn.disabled = true;
+
+                setTimeout(() => {
+                    form.classList.remove('was-validated');
+                    form.reset();
+                    submitText.classList.remove('d-none');
+                    submitSpinner.classList.add('d-none');
+                    submitBtn.disabled = false;
+                    formSuccess.classList.remove('d-none');
+                    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                    setTimeout(() => formSuccess.classList.add('d-none'), 6000);
+                }, 1800);
+            }
+        });
+
+        // ── Smooth scroll for anchor links ───────────────────────────
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    const offset = 80; // navbar height
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+
+                    // Close offcanvas if open
+                    const offcanvas = bootstrap.Offcanvas.getInstance(document.getElementById('sidebarOffcanvas'));
+                    if (offcanvas) offcanvas.hide();
+                }
+            });
+        });
+
+        // ── Billing Toggle (changes price display) ───────────────────
+        const billingToggle = document.getElementById('billingToggle');
+        billingToggle.addEventListener('change', () => {
+            const prices = document.querySelectorAll('.price-amount');
+            // prices[1] is Pro
+            const proPriceEl = prices[1];
+            if (billingToggle.checked) {
+                proPriceEl.innerHTML = '$23<span class="price-period fs-5" style="-webkit-text-fill-color:#666;">/mo</span>';
+            } else {
+                proPriceEl.innerHTML = '$29<span class="price-period fs-5" style="-webkit-text-fill-color:#666;">/mo</span>';
+            }
+        });
+
+        // ── Active nav link on scroll ─────────────────────────────────
+        const sections = document.querySelectorAll('.section-dark[id], .section-darker[id], #hero');
+        const navLinks = document.querySelectorAll('.tn-navbar .nav-link');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    const active = document.querySelector(`.tn-navbar .nav-link[href="#${entry.target.id}"]`);
+                    if (active) active.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-30% 0px -60% 0px' });
+        sections.forEach(s => observer.observe(s));
+    </script>
+</body>
+
+</html>
